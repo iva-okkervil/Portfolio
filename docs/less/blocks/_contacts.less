@@ -5,38 +5,9 @@
 	background-position: center;
 	background-repeat: repeat-y;
 	background-color: #f4f8f9;
-	padding: 125px 0 85px;
+	padding: 125px 0 150px;
 	margin: 0 auto;
 	color: #000;
-
-	&::after {
-		position: absolute;
-		z-index: 2;
-		top: 280px;
-		left: 0;
-		width: 330px;
-		height: 277px;
-		content: "";
-		background-image: url("../images/contacts/dots.png");
-		background-position: right;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	&::before {
-		position: absolute;
-		z-index: 1;
-		top: 300px;
-		left: 0;
-		width: 180px;
-		height: 243px;
-		content: "";
-		background-image: url("../images/contacts/comma.svg");
-		background-position: right;
-		background-repeat: repeat-x;
-		background-size: contain;
-		opacity: 0.3;
-	}
 }
 
 .contacts__title {
@@ -50,11 +21,43 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	z-index: 5;
+
+	&::after {
+		position: absolute;
+		z-index: 2;
+		top: 20px;
+		left: -325px;
+		width: 330px;
+		height: 277px;
+		content: "";
+		background-image: url("../images/contacts/dots.png");
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&::before {
+		position: absolute;
+		z-index: 1;
+		top: 20px;
+		left: -310px;
+		width: 280px;
+		height: 243px;
+		content: "";
+		background-image: url("../images/contacts/comma.svg");
+		background-position: right;
+		background-repeat: repeat-x;
+		background-size: contain;
+		opacity: 0.3;
+	}
 }
 
 // info
 
-.contacts__info {max-width: 45%;}
+.contacts__info {
+	max-width: 45%;
+	padding: 20px 0 0;
+}
 
 .contacts__info-description {
 	margin: 0 0 45px;
@@ -66,9 +69,10 @@
 
 .contacts__info-list-item {
 	position: relative;
-	width: 100%;
+	width: fit-content;
 	margin: 0 0 23px;
 	font-size: 20px;
+	transition: all 0.2s linear;
 
 	&:last-child {margin: 0;}
 }
@@ -101,9 +105,8 @@
 	justify-content: space-between;
 	align-items: center;
 	max-width: 45%;
-	min-width: 545px;
-	height: 550px;
-	margin: 0 0 60px;
+	min-width: 530px;
+	height: 540px;
 	padding: 70px 65px 45px;
 	background-color: #fff;
 	box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 0.7);
@@ -155,11 +158,4 @@
 	font-size: 14px;
 	color: #bcbcbc;
 	transition: 0.3s;
-}
-
-.contact__form__success {
-	position: absolute;
-	z-index: 2;
-	height: 100%;
-	width: 100%;
 }

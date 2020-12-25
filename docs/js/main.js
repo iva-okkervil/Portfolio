@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 	function ajaxFormSubmit() {
 
-		let string = $(".contact__form").serialize();
+		let string = $(".contacts__form").serialize();
 
 		//Формируем ajax-запрос
 		$.ajax({
@@ -74,7 +74,7 @@ $(document).ready(function(){
 			data: string, 
 			// Функция, если все прошло успешно
 			success: function (html) {
-				$(".contact__form").slideUp(800);
+				$(".contacts__form").slideUp(800);
 				$('#answer').html(html);
 			}
 		});

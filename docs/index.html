@@ -150,7 +150,7 @@
 			<div class="portfolio__content">
 				<!-- portfolio__filter -->
 				<div class="portfolio__filter">
-					<button type="button" class="portfolio__filter-item control-active" data-filter="all">Все работы</button>
+					<button type="button" class="portfolio__filter-item" data-filter="all">Все работы</button>
 					<button type="button" class="portfolio__filter-item" data-filter=".flexbox">Флексбокс</button>
 					<button type="button" class="portfolio__filter-item" data-filter=".adaptive">Адаптивная вёрстка</button>
 				</div>
@@ -342,10 +342,6 @@
 							<span class="info-item-type">E-mail</span>
 							<span class="info-link">cheshire_tomcat@list.ru</span>
 						</a>
-						<a href="skype: someskype?call" class="contacts__info-list-item">
-							<span class="info-item-type">Skype</span>
-							<span class="info-link">none</span>
-						</a>
 						<a href="tel: +79955071094" class="contacts__info-list-item">
 							<span class="info-item-type">Телефон</span>
 							<span class="info-text">+7 (995) 507-10-94</span>
@@ -376,9 +372,10 @@
 				</div>
 				<!-- // contacts__info -->
 
+				<!-- contacts__form-wrapper -->
+				<div class="contacts__form-wrapper">
 				<!-- contacts__form -->
 				<form class="contacts__form" action="">
-					
 					<div class="contacts__form-item">
 						<span class="fake-placeholder">Ваш e-mail</span>
 						<input type="text" name="email" class="contacts__form-input" required="">
@@ -392,10 +389,12 @@
 						<textarea name="comment" class="contacts__form-input"></textarea required="">
 					</div>
 					<input type="submit" value="Отправить" class="button button-submit">
-
 				</form>
 				<!-- // contacts__form -->
 				<div id="answer"></div>
+				</div>
+				<!-- // contacts__form-wrapper -->
+
 			</div>
 			<!-- // contacts__content -->
 		</div>
