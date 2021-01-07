@@ -1602,25 +1602,25 @@ header {
 }
 footer {
   margin: 0 auto;
-  padding: 25px 0 40px;
+  padding: 35px 0 40px;
   background-color: #333;
 }
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
   footer {
-    padding: 35px 0 40px;
+    padding: 35px 0 70px;
   }
 }
 .footer__title {
-  margin: 0 0 15px;
+  margin: 0 0 9px;
   font-size: 18px;
   color: #fff;
 }
 .footer__title h4 {
   font-weight: 500;
 }
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
   .footer__title {
-    margin: 0 0 9px;
+    margin: 0 0 15px;
   }
 }
 .footer__info {
