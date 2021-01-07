@@ -46,13 +46,17 @@
 				</a>
 			</div>
 
+			<div class="toggle-menu">
+				<span></span>
+			</div>
+
 		</div>
 		<!-- // header__navigation -->
 
 		<!-- container -->
 		<div class="container">
 			<!-- header__content -->
-			<div class="header__content-bio reverse">
+			<div class="header__content-bio">
 
 				<div class="header__image">
 					<img src="./images/header/portrait.jpg" alt="Верстальщик сайтов">
@@ -60,8 +64,7 @@
 
 				<div class="header__description">
 					<h1 class="name-title">
-						<span class="underline">Анастасия</span>
-						<span class="underline accent">Звездина</span>
+						<span class="underline">Анастасия</span><span class="underline accent">Звездина</span>
 					</h1>
 					<div class="content-text">
 						<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
@@ -101,7 +104,7 @@
 							<li>с Bootstrap и без него.</li>
 						</ul>
 
-						<div class="header__button">
+						<div class="header__buttons">
 							<a href="#portfolio" class="button">Смотреть работы</a>
 						</div>
 					</div>
@@ -123,7 +126,7 @@
 							</a>
 						</div>
 
-						<a href="mailto: cheshire_tomcat@list.ru" class="email-link">cheshire_tomcat@list.ru</a>
+						<a href="mailto:cheshire_tomcat@list.ru" class="section-link">cheshire_tomcat@list.ru</a>
 
 					</div>
 
@@ -158,53 +161,73 @@
 
 				<!-- row -->
 				<div class="row" id="portfolio__works">
+
 					<a href="./projects/unit/index.html" class="portfolio__card big-card mix flexbox">
 						<div class="portfolio__card-image">
 							<img src="./images/portfolio/unit.jpg" alt="Юнит">
-						</div>						
-						<h4 class="portfolio__card-title">Проект "Юнит"</h4>
-						<div class="portfolio__card-description">
-							<p>Флексбокс-вёрстка одностраничного сайта.</p>
-						</div>
+						</div>	
+						<div class="portfolio__card-text">
+							<h3 class="portfolio__card-title">Проект "Юнит"</h3>
+							<div class="portfolio__card-description">
+								<p>Флексбокс-вёрстка одностраничного сайта.</p>
+							</div>
+						</div>	
 					</a>
+
 					<a href="projects/forest-travel/index.html" class="portfolio__card big-card mix">
 						<div class="portfolio__card-image">
 							<img src="./images/portfolio/forest-travel.jpg" alt="ФорестТревел">
-						</div>						
-						<h4 class="portfolio__card-title">Проект "ФорестТревел"</h4>
-						<div class="portfolio__card-description">
-							<p>Блочная вёрстка многостраничного сайта (активные страницы: "Главная", "Контакты", "Туры", "Экстремальный отдых", "Трекинг-походы").</p>
 						</div>
-					</a>				
+						<div class="portfolio__card-text">						
+							<h3 class="portfolio__card-title">Проект "ФорестТревел"</h3>
+							<div class="portfolio__card-description">
+								<p>Блочная вёрстка многостраничного сайта (активные страницы: "Главная", "Контакты", "Туры", "Экстремальный отдых", "Трекинг-походы").</p>
+							</div>
+						</div>
+					</a>
+
 					<a href="projects/card-book/card.html" class="portfolio__card mix">
 						<div class="portfolio__card-image">
 							<img src="./images/portfolio/card-1.jpg" alt="Карточка товара">
-						</div>						
-						<h4 class="portfolio__card-title">Карточка товара</h4>
-						<div class="portfolio__card-description">
-							<p>Вёрстка карточки товара.</p>
+						</div>	
+						<div class="portfolio__card-text">					
+							<h3 class="portfolio__card-title">Карточка товара</h3>
+							<div class="portfolio__card-description">
+								<p>Вёрстка карточки товара.</p>
+							</div>
 						</div>
 					</a>
+
 					<a href="projects/motobike-card/index.html" class="portfolio__card mix">
 						<div class="portfolio__card-image">
 							<img src="./images/portfolio/card-2.jpg" alt="Карточка товара">
-						</div>						
-						<h4 class="portfolio__card-title">Карточка товара</h4>
-						<div class="portfolio__card-description">
-							<p>Вёрстка карточки товара.</p>
+						</div>	
+						<div class="portfolio__card-text">					
+							<h3 class="portfolio__card-title">Карточка товара</h3>
+							<div class="portfolio__card-description">
+								<p>Вёрстка карточки товара.</p>
+							</div>
 						</div>
 					</a>
+
 					<a href="projects/adaptive_desktop_first/index.html" class="portfolio__card mix adaptive">
 						<div class="portfolio__card-image">
 							<img src="./images/portfolio/adaptive.jpg" alt="Адаптивная вёрстка">
-						</div>						
-						<h4 class="portfolio__card-title">Mobile first</h4>
-						<div class="portfolio__card-description">
-							<p>Пример адаптивной вёрстки mobile first.</p>
+						</div>		
+						<div class="portfolio__card-text">				
+							<h3 class="portfolio__card-title">Mobile first</h3>
+							<div class="portfolio__card-description">
+								<p>Пример адаптивной вёрстки mobile first.</p>
+							</div>
 						</div>
 					</a>
+
 				</div>
 				<!-- // row -->
+
+				<div class="portfolio__link">
+					<a href="" class="section-link">Смотреть все работы</a>
+				</div>
 
 			</div>
 			<!-- // portfolio__content -->
@@ -338,11 +361,11 @@
 					</div>
 
 					<div class="contacts__info-list">
-						<a href="mailto: cheshire_tomcat@list.ru" class="contacts__info-list-item">
+						<a href="mailto:cheshire_tomcat@list.ru" class="contacts__info-list-item">
 							<span class="info-item-type">E-mail</span>
 							<span class="info-link">cheshire_tomcat@list.ru</span>
 						</a>
-						<a href="tel: +79955071094" class="contacts__info-list-item">
+						<a href="tel:+79955071094" class="contacts__info-list-item">
 							<span class="info-item-type">Телефон</span>
 							<span class="info-text">+7 (995) 507-10-94</span>
 						</a>
@@ -374,63 +397,65 @@
 
 				<!-- contacts__form-wrapper -->
 				<div class="contacts__form-wrapper">
-				<!-- contacts__form -->
-				<form class="contacts__form" action="">
-					<div class="contacts__form-item">
-						<span class="fake-placeholder">Ваш e-mail</span>
-						<input type="text" name="email" class="contacts__form-input" required="">
+					<!-- contacts__form -->
+					<form class="contacts__form">
+						<div class="contacts__form-item">
+							<span class="fake-placeholder">Ваш e-mail</span>
+							<input type="text" name="email" class="contacts__form-input" required="">
+						</div>
+						<div class="contacts__form-item">
+							<span class="fake-placeholder">Тема письма</span>
+							<input type="text" name="subject" class="contacts__form-input" required="">
+						</div>
+						<div class="contacts__form-item">
+							<span class="fake-placeholder">Сообщение</span>
+							<textarea name="comment" class="contacts__form-input" required="">
+								
+							</textarea>
+						</div>
+							<input type="submit" value="Отправить" class="button button-submit">
+						</form>
+						<!-- // contacts__form -->
+						<div id="answer"></div>
 					</div>
-					<div class="contacts__form-item">
-						<span class="fake-placeholder">Тема письма</span>
-						<input type="text" name="subject" class="contacts__form-input" required="">
-					</div>
-					<div class="contacts__form-item">
-						<span class="fake-placeholder">Сообщение</span>
-						<textarea name="comment" class="contacts__form-input"></textarea required="">
-					</div>
-					<input type="submit" value="Отправить" class="button button-submit">
-				</form>
-				<!-- // contacts__form -->
-				<div id="answer"></div>
+					<!-- // contacts__form-wrapper -->
+
 				</div>
-				<!-- // contacts__form-wrapper -->
+				<!-- // contacts__content -->
+			</div>
+			<!-- // container -->
+		</section>
+		<!-- // CONTACTS -->
+
+		<!-- FOOTER -->
+		<footer>
+			<!-- container -->
+			<div class="container">
+
+				<!-- footer__content -->
+				<div class="footer__content">
+
+					<div class="footer__title">
+						<h4>&copy; <time datetime="2020">2020</time> &mdash; Анастасия Звездина</h4>
+					</div>
+
+					<div class="footer__info">
+						<p>Этот сайт был создан в рамках прохождения обучения по вёрстке на курсах от <a href="https://webcademy.ru/" class="footer__link" target="_blank">WebCademy.ru</a>.</p>
+					</div>
+
+				</div>
+				<!-- // footer__content -->
 
 			</div>
-			<!-- // contacts__content -->
-		</div>
-		<!-- // container -->
-	</section>
-	<!-- // CONTACTS -->
+			<!-- // container -->
+		</footer>
+		<!-- // FOOTER -->
 
-	<!-- FOOTER -->
-	<footer>
-		<!-- container -->
-		<div class="container">
-			
-			<!-- footer__content -->
-			<div class="footer__content">
-				
-				<div class="footer__title">
-					<h4>&copy; <time datetime="2020">2020</time> &mdash; Анастасия Звездина</h4>
-				</div>
+		<!-- LIBS -->
+		<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+		<script src="./libs/mixitup3/mixitup.min.js"></script>
+		<script src="./libs/jquery.validate/jquery.validate.js"></script>
+		<script src="./js/main.js"></script>
 
-				<div class="footer__info">
-					<p>Этот сайт был создан в рамках прохождения обучения по вёрстке на курсах от <a href="https://webcademy.ru/" class="footer__link" target="_blank">WebCademy.ru</a>.</p>
-				</div>
-				
-			</div>
-			<!-- // footer__content -->
-
-		</div>
-		<!-- // container -->
-	</footer>
-	<!-- // FOOTER -->
-
-	<!-- LIBS -->
-	<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
-	<script src="./libs/mixitup3/mixitup.min.js"></script>
-	<script src="./libs/jquery.validate/jquery.validate.js"></script>
-	<script src="./js/main.js"></script>
-
-</body>
-</html>
+	</body>
+	</html>
