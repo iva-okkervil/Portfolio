@@ -1,6 +1,5 @@
 header {
 	position: relative;
-	z-index: 1;
 	background-color: #fff;
 	max-width: 1600px;
 	margin: 0 auto;
@@ -16,6 +15,7 @@ header {
 		background-position: center;
 		background-repeat: repeat-y;
 		padding: 75px 0 240px;
+		z-index: 1;
 	}
 }
 
@@ -32,45 +32,7 @@ header {
 	@media (min-width: 1200px) {
 		max-width: 1400px;
 		margin: 0 auto 170px;
-		padding: 0;
 	}
-}
-
-.header__logo {
-	position: relative;
-	z-index: 1;
-	font-size: 42px;
-	font-weight: 900;
-	
-	&::after {
-		position: absolute;
-		right: -5px;
-		left: -5px;
-		bottom: 10px;
-		height: 9px;
-		z-index: -1;
-		content: "";
-		background-color: #fbdc4d;
-		transition: all 0.2s linear;
-	}
-}
-
-.header__navigation-menu {
-	display: none;
-
-	@media (min-width: 1200px) {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-.header__navigation-link {
-	position: relative;
-	margin: 0 80px 0 0;
-	font-size: 20px;
-	font-weight: 700;
-
-	&:last-child {margin: 0;}
 }
 
 .header__socials {
@@ -223,6 +185,7 @@ header {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	position: relative;
+	padding: 0 75px 0 0;
 
 	@media (min-width: 768px) {flex-wrap: nowrap;}
 	@media (min-width: 1200px) {justify-content: space-between;}
@@ -232,7 +195,7 @@ header {
 	margin: 0 0 20px;
 	max-width: 100%;
 
-	@media (min-width: 695px) {
+	@media (min-width: 680px) {
 		max-width: 54%;
 		margin: 0;
 	}

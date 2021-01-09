@@ -29,12 +29,13 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	z-index: 5;
+	z-index: 3;
 
 	&::after {
 		display: none;
 
 		@media (min-width: 1200px) {
+			display: block;
 			position: absolute;
 			z-index: 2;
 			top: 20px;
@@ -53,6 +54,7 @@
 		display: none;
 
 		@media (min-width: 1200px) {
+			display: block;
 			position: absolute;
 			z-index: 1;
 			top: 20px;
@@ -142,11 +144,13 @@
 .info-link {
 	font-weight: 500;
 	color: #039be5;
+	transition: all 0.2s linear;
 }
 
 .info-text {
 	font-weight: 500;
 	color: #96969d;
+	transition: all 0.2s linear;
 }
 
 // form

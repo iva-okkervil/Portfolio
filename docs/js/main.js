@@ -81,3 +81,20 @@ $(document).ready(function(){
 		// Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
 		return false;	
 }
+
+
+$(function() {
+  function init() {
+    $('[data-behaviour="toggle-menu-icon"]').on('click', toggleMenuIcon);
+    $('[data-behaviour="toggle-link-icon"]').on('click', toggleSubMenu);
+  };
+  
+  function toggleMenuIcon() {
+    $(this).toggleClass('active');
+    $('[data-element="toggle-nav"]').toggleClass('active');
+    $('[data-element="overlay"]').toggleClass('active');
+    $('[data-element="no-scroll"]').toggleClass('active');
+  };
+  
+  init()
+});

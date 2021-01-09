@@ -6,12 +6,48 @@
 	<title>Портфолио</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
-	
+<body data-element="no-scroll">
+
+	<!-- overlay -->
+	<div class="overlay" data-element="overlay"></div>
+	<!-- //overlay -->
+
+	<!-- mobile-menu -->
+	<div class="mobile-menu" data-element="toggle-nav">
+		<div class="mobile-menu__logo">
+			<a href="./index.html" class="logo">АС</a>
+		</div>
+
+		<div class="mobile-menu__info">
+			<nav class="navigation-menu">
+				<a href="" class="navigation-menu__link">Услуги</a>
+				<a href="" class="navigation-menu__link">Работы</a>
+				<a href="" class="navigation-menu__link">Контакты</a>
+			</nav>
+
+			<div class="socials-list">
+				<a href="https://github.com/iva-okkervil" class="socials-link">
+					<img src="./images/icons/github.svg" alt="Github">
+				</a>
+				<a href="https://t.me/i_okkervil" class="socials-link">
+					<img src="./images/icons/telegram-colored.svg" alt="Telegram">
+				</a>
+				<a href="" class="socials-link">
+					<img src="./images/icons/vk-colored.svg" alt="Vk">
+				</a>
+				<a href="" class="socials-link">
+					<img src="./images/icons/facebook-colored.svg" alt="Facebook">
+				</a>
+			</div>
+
+			<a href="mailto:cheshire_tomcat@list.ru" class="section-link">cheshire_tomcat@list.ru</a>
+		</div>
+	</div>
+	<!-- // mobile-menu -->
+
 	<!-- HEADER -->
 	<header>
 
@@ -19,13 +55,13 @@
 		<div class="header__navigation">
 
 			<div class="header__logo">
-				<a href="./index.html">АС</a>
+				<a href="./index.html" class="logo">АС</a>
 			</div>
 
-			<nav class="header__navigation-menu">
-				<a href="" class="header__navigation-link">Главная</a>
-				<a href="" class="header__navigation-link">Работы</a>
-				<a href="" class="header__navigation-link">Контакты</a>
+			<nav class="navigation-menu">
+				<a href="./index.html" class="navigation-menu__link">Главная</a>
+				<a href="#portfolio" class="navigation-menu__link">Работы</a>
+				<a href="#contacts" class="navigation-menu__link">Контакты</a>
 			</nav>
 
 			<div class="header__socials">
@@ -46,8 +82,8 @@
 				</a>
 			</div>
 
-			<div class="toggle-menu">
-				<span></span>
+			<div class="toggle-menu" data-behaviour="toggle-menu-icon">
+				<span class="toggle-menu__bar"></span>
 			</div>
 
 		</div>
@@ -413,49 +449,49 @@
 								
 							</textarea>
 						</div>
-							<input type="submit" value="Отправить" class="button button-submit">
-						</form>
-						<!-- // contacts__form -->
-						<div id="answer"></div>
-					</div>
-					<!-- // contacts__form-wrapper -->
-
+						<input type="submit" value="Отправить" class="button button-submit">
+					</form>
+					<!-- // contacts__form -->
+					<div id="answer"></div>
 				</div>
-				<!-- // contacts__content -->
-			</div>
-			<!-- // container -->
-		</section>
-		<!-- // CONTACTS -->
-
-		<!-- FOOTER -->
-		<footer>
-			<!-- container -->
-			<div class="container">
-
-				<!-- footer__content -->
-				<div class="footer__content">
-
-					<div class="footer__title">
-						<h4>&copy; <time datetime="2020">2020</time> &mdash; Анастасия Звездина</h4>
-					</div>
-
-					<div class="footer__info">
-						<p>Этот сайт был создан в рамках прохождения обучения по вёрстке на курсах от <a href="https://webcademy.ru/" class="footer__link" target="_blank">WebCademy.ru</a>.</p>
-					</div>
-
-				</div>
-				<!-- // footer__content -->
+				<!-- // contacts__form-wrapper -->
 
 			</div>
-			<!-- // container -->
-		</footer>
-		<!-- // FOOTER -->
+			<!-- // contacts__content -->
+		</div>
+		<!-- // container -->
+	</section>
+	<!-- // CONTACTS -->
 
-		<!-- LIBS -->
-		<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
-		<script src="./libs/mixitup3/mixitup.min.js"></script>
-		<script src="./libs/jquery.validate/jquery.validate.js"></script>
-		<script src="./js/main.js"></script>
+	<!-- FOOTER -->
+	<footer>
+		<!-- container -->
+		<div class="container">
 
-	</body>
-	</html>
+			<!-- footer__content -->
+			<div class="footer__content">
+
+				<div class="footer__title">
+					<h4>&copy; <time datetime="2020">2020</time> &mdash; Анастасия Звездина</h4>
+				</div>
+
+				<div class="footer__info">
+					<p>Этот сайт был создан в рамках прохождения обучения по вёрстке на курсах от <a href="https://webcademy.ru/" class="footer__link" target="_blank">WebCademy.ru</a>.</p>
+				</div>
+
+			</div>
+			<!-- // footer__content -->
+
+		</div>
+		<!-- // container -->
+	</footer>
+	<!-- // FOOTER -->
+
+	<!-- LIBS -->
+	<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+	<script src="./libs/mixitup3/mixitup.min.js"></script>
+	<script src="./libs/jquery.validate/jquery.validate.js"></script>
+	<script src="./js/main.js"></script>
+
+</body>
+</html>
