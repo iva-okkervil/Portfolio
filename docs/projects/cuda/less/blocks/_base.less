@@ -1,0 +1,121 @@
+* {box-sizing: border-box;}
+
+body, h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+ul {list-style: none;}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.logo {
+	width: 120px;
+	.cls-1 {fill: #fff;}
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.section-padding {padding: 120px 0 127px;}
+
+.title {
+	font-size: 40px;
+	letter-spacing: 4px;
+	line-height: 0.75;
+	text-transform: uppercase;
+}
+
+.title-medium {
+	font-size: 24px;
+	line-height: 0.75;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+}
+
+.subtitle {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.1;
+	color: #30bae7;
+}
+
+.horizontal-line {
+	margin: 21px 0;
+	height: 4px;
+}
+
+.description-text {
+	font-size: 18px;
+	line-height: 1.4;
+	letter-spacing: 0.4px;
+	text-align: center;
+}
+
+// links 
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	transition: all 0.2s linear;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation-link {
+	padding: 10px 15px;
+	font-size: 16px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.socials-link {
+	width: 32px;
+	height: 32px;
+	margin: 0 10px 0 0;
+	border-radius: 50%;
+	background-color: #bdd1df;
+	transition: background-color 0.2s linear;
+	&:last-child {margin: 0;}
+}
+
+.socials-icon img {vertical-align: middle;}
+
+// buttons
+
+button, input, textarea {
+	outline: none;
+	border: none;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+button, input {cursor: pointer;}
+
+button, .button {
+	padding: 20px 80px;
+	border-radius: 4px;
+	font-size: 18px;
+	line-height: 1.45;
+	letter-spacing: 0.36px;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
