@@ -164,12 +164,7 @@ a {
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 320px;
-}
-@media (min-width: 768px) {
-  .socials-list {
-    max-width: 100%;
-  }
+  max-width: 210px;
 }
 .socials-link {
   width: 48px;
@@ -1714,7 +1709,6 @@ header {
 }
 .contacts__info-links .socials-list {
   margin: 0 0 50px;
-  max-width: 295px;
 }
 .info-link {
   font-weight: 500;
