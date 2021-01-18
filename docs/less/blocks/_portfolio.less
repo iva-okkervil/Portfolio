@@ -1,7 +1,7 @@
 .portfolio {
 	padding: 45px 0 120px;
-	background-color: #f4f8f9;
-	color: #000;
+	background-color: @bg-color-light;
+	color:@text-color-black;
 
 	@media (min-width: 768px) {padding: 62px 0 120px;}
 	@media (min-width: 1200px) {padding: 100px 0 125px;}
@@ -29,7 +29,7 @@
 	margin: 0 50px 0 0;
 	font-size: 24px;
 	font-weight: 900;
-	color: #8fa5ae;
+	color: @text-color-light;
 	transition: all 0.2s linear;
 
 	&:last-child {margin: 0;}
@@ -43,39 +43,20 @@
 // cards
 
 .portfolio__card {
-	margin: 0 0 43px;
-	max-width: 360px;
+	margin: 0 0 40px;
+	max-width: 80%;
 
 	@media (min-width: 768px) {
-		max-width: 48%;
-		margin: 0 0 55px;
+		max-width: 47%;
+		margin: 0 0 43px;
 	}
 
 	@media (min-width: 1200px) {
-		max-width: 33%;
-		margin: 55px 0 0;
+		margin: 0 0 55px;
 		transition: text-shadow 0.2s linear;
 
-		&:nth-child(1) {margin: 0;}
-		&:nth-child(2) {margin: 0;}
-	}
-}
-
-@media (min-width: 1200px) {
-	.big-card {
-		width: 556px;
-		max-width: 50%;
-
-		.portfolio__card-title {
-			margin: 0 0 5px;
-			font-size: 32px;
-			font-weight: 700;
-		}
-
-		.portfolio__card-description {
-			font-size: 22px;
-			font-weight: 300;
-		}
+		&:nth-last-child(1) {margin: 0;}
+		&:nth-last-child(2) {margin: 0;}
 	}
 }
 
@@ -83,8 +64,13 @@
 	margin: 0 0 20px;
 
 	img {
-		background-color: #fdd446;
+		// height: 250px;
+		background-color: @bg-img;
 		transition: box-shadow 0.2s linear;
+
+		@media (min-width: 768px) {height: 250px;}
+
+		@media (min-width: 1200px) {height: 370px;}
 	}
 }
 
@@ -94,7 +80,11 @@
 
 	@media (min-width: 768px) {font-size: 24px;}
 
-	@media (min-width: 1200px) {font-size: 26px;}
+	@media (min-width: 1200px) {
+		margin: 0 0 5px;
+		font-size: 32px;
+		font-weight: 700;
+	}
 }
 
 .portfolio__card-description {
@@ -103,5 +93,5 @@
 
 	@media (min-width: 768px) {font-size: 18px;}
 
-	@media (min-width: 1200px) {font-size: 20px;}
+	@media (min-width: 1200px) {font-size: 22px;}
 }

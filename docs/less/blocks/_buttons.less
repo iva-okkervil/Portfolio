@@ -1,0 +1,78 @@
+.toggle-menu {
+	position: fixed;
+	top: 35px;
+	right: 15px;
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: @bg-img;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	z-index: 10;
+
+	@media (min-width: 1200px) {display: none;}
+
+	.toggle-menu__bar {
+		width: 100%;
+		height: 5px;
+		margin: 0 auto;
+		background-color: @toggle-bar;
+		transition: all 0.3s ease;
+	}
+
+	&::before, &::after {
+		position: absolute;
+		left: 10px;
+		width: 40px;
+		height: 5px;
+		margin: 0 auto;
+		content: "";
+		background-color: @toggle-bar;
+		transition: transform 0.5s ease;
+	}
+
+	&::before {top: 17px;}
+	&::after {bottom: 17px;}
+}
+
+.toggle-menu.active {
+	.toggle-menu__bar {
+		width: 0;
+		background-color: transparent;
+}
+
+	&::before, &::after {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	&::before {transform: rotate(-45deg);}
+	&::after {transform: rotate(45deg);}
+}
+
+button, input, textarea {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: 'MPLUS 1p', sans-serif;
+}
+
+.button {
+	display: inline-block;
+	padding: 11px 35px;
+	border-radius: 31px;
+	border: 4px solid @button-color-basics;
+	background-color: @button-color-basics;
+	font-size: 22px;
+	font-weight: 700;
+	transition: all 0.2s linear;
+}
+
+.button.button-white {
+	border: 4px solid @button-color-border;
+	background-color: transparent;
+	transition: all 0.2s linear;
+}
