@@ -1,7 +1,8 @@
-let containerE1 = document.querySelector('#portfolio__works');
+$(document).ready(function () {
+  let containerE1 = document.querySelector('#portfolio__works');
 let mixit = mixitup(containerE1, {
-	classNames: {
-	}
+  classNames: {
+  }
 });
 
 $(function() {
@@ -19,3 +20,15 @@ $(function() {
   
   init()
 });
+
+$('#backtop').hide('');
+$(window).scroll(function(){
+  if($(this).scrollTop() > 500){
+    $('#backtop').fadeIn();
+  }
+  else{
+    $('#backtop').fadeOut();
+  }
+});
+});
+

@@ -26,6 +26,18 @@ body {
 body.active {
   overflow: hidden;
 }
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+ul {
+  list-style: none;
+}
+textarea {
+  resize: none;
+}
 .container {
   max-width: 740px;
   padding: 0 15px 0;
@@ -72,18 +84,6 @@ body.active {
 }
 .overlay.active {
   display: block;
-}
-img,
-svg {
-  max-width: 100%;
-  height: auto;
-  vertical-align: top;
-}
-ul {
-  list-style: none;
-}
-textarea {
-  resize: none;
 }
 .accent {
   position: relative;
@@ -366,7 +366,7 @@ textarea {
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
-  background-color: #86cbde;
+  background-color: #37a9c7;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -379,6 +379,17 @@ textarea {
           align-items: center;
   cursor: pointer;
   z-index: 10;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.toggle-menu:hover {
+  background-color: #aedde9;
+}
+.toggle-menu:focus,
+.toggle-menu:active {
+  background-color: #ffd300;
 }
 @media (min-width: 1200px) {
   .toggle-menu {
@@ -475,6 +486,33 @@ textarea {
   -o-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+#backtop {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  width: 60px;
+  height: 60px;
+  z-index: 7;
+}
+@media (min-width: 1200px) {
+  #backtop {
+    right: 60px;
+    bottom: 60px;
+  }
+}
+#backtop svg path {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#backtop:hover svg path,
+#backtop:focus svg path {
+  fill: #aedde9;
+}
+#backtop:active svg path {
+  fill: #ffd300;
 }
 a {
   display: inline-block;

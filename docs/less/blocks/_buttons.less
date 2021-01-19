@@ -6,11 +6,15 @@
 	height: 60px;
 	padding: 10px;
 	border-radius: 50%;
-	background-color: @bg-img;
+	background-color: @button-color-basics;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
 	z-index: 10;
+	transition: all 0.3s ease;
+
+	&:hover {background-color: @button-color-light;}
+	&:focus, &:active {background-color: @button-color-active;}
 
 	@media (min-width: 1200px) {display: none;}
 
@@ -75,4 +79,24 @@ button, input, textarea {
 	border: 4px solid @button-color-border;
 	background-color: transparent;
 	transition: all 0.2s linear;
+}
+
+#backtop {
+	// display: none;
+	position: fixed;
+	right: 15px;
+	bottom: 35px;
+	width: 60px;
+	height: 60px;
+	z-index: 7;
+
+	@media (min-width: 1200px) {
+		right: 60px;
+		bottom: 60px;
+	}
+
+	svg path {transition: all 0.2s linear;}
+
+	&:hover, &:focus {svg path {fill: @button-color-light;}}
+	&:active {svg path {fill: @button-color-active;}}
 }
